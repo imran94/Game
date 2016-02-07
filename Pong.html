@@ -6,6 +6,7 @@
 	<canvas id="gameCanvas" width="800" height="600"></canvas>
 	
 	<script>
+		var frames = window.prompt("Frame rate: ");
 		var canvas;
 		var canvasContext;
 		
@@ -168,8 +169,7 @@
 		{
 			canvas = document.getElementById('gameCanvas');
 			canvasContext = canvas.getContext('2d');
-			var frames = 60;
-			
+		
 			setInterval(
 				function() 
 				{ 
